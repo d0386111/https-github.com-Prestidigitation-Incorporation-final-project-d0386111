@@ -1,7 +1,7 @@
 //
 //  ViewController.swift
 //  Final
-//
+//  DUSTAN FRANCIS
 //  Created by Student on 10/13/20.
 //  Copyright © 2020 Dustan Francis. All rights reserved.
 //
