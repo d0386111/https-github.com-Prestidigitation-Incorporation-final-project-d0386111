@@ -15,29 +15,17 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 //Linked my button
-    @IBAction func Generate(_ sender: Any) {
-    
+    @IBAction func Generate(_ sender: UIButton) {
+        //Establish array/randomizer
+        let subjects:[String] = ["He ", "Him ", "Her ", "The ", "They ", "Them ", "That ", "My ", "Your ", "Our ", "John ", "Don ", "Ron ", "Becky ", "Karen ", "Susan ", "Bob ", "Jane ", "Joe "]
+        let nouns:[String] = ["Table ", "Rock ", "Lake ", "Counter ", "Shoe ", "Faucet ", "Remote ", "Phone ", "Pen ", "Drink ", "Chair ", "Book ", "Door ", "Window ", "Freedom ", "Basketball ", "Disneyland ", "Trump ", "Bush ", "Obama ", "Food ", "Console ", "Bed "]
+        let objects:[String] = ["the guitar", "his part", "the President", "the hill", "the kite", "a mouse", "in town", "the book", "the solution", "the problem", "cooking roast", "our dogs", "the door", "the stairs", "the window", "freedom"]
+       // let result = (subjects.randomElement() != nil) && (nouns.randomElement() != nil) && (objects.randomElement() != nil)
+            //print("Your random PassPhrase is: '\(result)'.")
+        let word1 = subjects.randomElement() ?? "Blank"
+        let word2 = nouns.randomElement() ?? "Blank"
+        let word3 = objects.randomElement() ?? "Blank"
+        print("Your random Passphrase is: '\(word1+word2+word3)'")
     }
-//Linked my field
-    @IBOutlet var PassPhrase: UITextField!
-//Establish array/randomizer
-    var subjects = ["He", "Him", "Her", "The", "They", "Them", "That", "My", "Your", "Our", "John", "Don", "Ron", "Becky", "Karen", "Susan", "Bob", "Jane", "Joe"]
-    var nouns = ["Table", "Rock", "Lake", "Counter", "Shoe", "Faucet", "Remote", "Phone", "Pen", "Drink", "Chair", "Book", "Door", "Window", "Freedom", "Basketball", "Disneyland", "Trump", "Bush", "Obama", "Food", "Console", "Bed"]
-    var objects = ["the guitar", "his part", "the President", "the hill", "the kite", "a mouse", "in town", "the book", "the solution", "the problem", "cooking roast", "our dogs", "the door", "the stairs", "the window", "freedom"]
-    func randomize() {
-        let result = (subjects.randomElement() != nil) && (nouns.randomElement() != nil) && (objects.randomElement() != nil)
-        print("Your random PassPhrase is: '\(result)'.")
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
 }
 
