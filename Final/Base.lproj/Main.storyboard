@@ -64,6 +64,9 @@
                         <color key="backgroundColor" red="0.094201095402240753" green="0.63022112846374512" blue="0.093196354806423187" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="PassPhrase" destination="4f0-Vq-6CO" id="lxJ-7u-pMo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

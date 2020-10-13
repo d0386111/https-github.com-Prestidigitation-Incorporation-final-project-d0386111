@@ -16,8 +16,10 @@ class ViewController: UIViewController {
     }
 //Linked my button
     @IBAction func Generate(_ sender: Any) {
-        randomize()
+    
     }
+//Linked my field
+    @IBOutlet var PassPhrase: UITextField!
 //Establish array/randomizer
     var subjects = ["He", "Him", "Her", "The", "They", "Them", "That", "My", "Your", "Our", "John", "Don", "Ron", "Becky", "Karen", "Susan", "Bob", "Jane", "Joe"]
     var nouns = ["Table", "Rock", "Lake", "Counter", "Shoe", "Faucet", "Remote", "Phone", "Pen", "Drink", "Chair", "Book", "Door", "Window", "Freedom", "Basketball", "Disneyland", "Trump", "Bush", "Obama", "Food", "Console", "Bed"]
