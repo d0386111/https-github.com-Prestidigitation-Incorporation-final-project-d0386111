@@ -26,6 +26,8 @@ class ViewController: UIViewController {
         let word2 = nouns.randomElement() ?? "Blank"
         let word3 = objects.randomElement() ?? "Blank"
         print("Your random Passphrase is: '\(word1+word2+word3)'")
+        self.PassPhraseField.text = "Your random Passphrase is: '\(word1+word2+word3)'"
     }
+    @IBOutlet var PassPhraseField: UILabel!
 }
 
